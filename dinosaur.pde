@@ -1,0 +1,21 @@
+PImage background;
+int bgX,bgY;
+void setup(){
+  size(1200,400);
+  background = loadImage("./images/background.png");
+  bgX=0;
+  bgY=0;
+}
+
+void draw(){
+  movebg();
+}
+
+void movebg(){
+  image(background,bgX,0,width,height);
+  image(background,bgX+width,0,width,height);
+  bgX-=7;
+  if(bgX<-width){
+    bgX=0;
+  }
+}
