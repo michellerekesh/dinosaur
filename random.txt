@@ -1,3 +1,4 @@
+
 PImage background;
 int bgX,bgY;
 void setup(){
@@ -19,3 +20,4 @@ void movebg(){
     bgX=0;
   }
 }
+
