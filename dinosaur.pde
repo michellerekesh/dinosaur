@@ -1,4 +1,3 @@
-
 PImage background;
 int bgX,bgY;
 void setup(){
@@ -15,9 +14,8 @@ void draw(){
 void movebg(){
   image(background,bgX,0,width,height);
   image(background,bgX+width,0,width,height);
-  bgX-=5;
+  bgX-=7;
   if(bgX<-width){
     bgX=0;
   }
 }
-
